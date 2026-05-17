@@ -24,16 +24,16 @@ EnCoach, klasik bir öğrenme yönetim sisteminin (LMS) ötesine geçerek öğre
 ---
 
 ## 📸 Ekran Görüntüleri
-
-Aşağıdaki kısma projenizin ekran görüntülerini ekleyebilirsiniz. Fotoğrafları GitHub reponuza yükledikten sonra `src="..."` kısımlarını güncelleyebilirsiniz.
-
 <div align="center">
-  <img src="https://via.placeholder.com/250x500.png?text=Ekran+Goruntusu+1" width="220" alt="Ekran 1"/>
-  &nbsp;
-  <img src="https://via.placeholder.com/250x500.png?text=Ekran+Goruntusu+2" width="220" alt="Ekran 2"/>
-  &nbsp;
-  <img src="https://via.placeholder.com/250x500.png?text=Ekran+Goruntusu+3" width="220" alt="Ekran 3"/>
-</div>
+
+<img width="362" height="812" alt="Ekran görüntüsü 2026-05-17 144736" src="https://github.com/user-attachments/assets/5b97771b-71e3-4627-b576-f036c929b3e8" />
+<img width="363" height="815" alt="Ekran görüntüsü 2026-05-17 144825" src="https://github.com/user-attachments/assets/7b3fe9e6-388c-4453-8997-3c9eb1530e19" />
+<img width="363" height="808" alt="Ekran görüntüsü 2026-05-17 144758" src="https://github.com/user-attachments/assets/f045cafd-4c84-4df6-850c-b8ee3bac4f3b" />
+<img width="365" height="813" alt="Ekran görüntüsü 2026-05-17 145014" src="https://github.com/user-attachments/assets/829f4701-1fd0-4056-90e2-e93268d59d6b" />
+<img width="367" height="817" alt="Ekran görüntüsü 2026-05-17 145031" src="https://github.com/user-attachments/assets/5fb78da2-7cb3-4fc6-beaa-b85d51612053" />
+
+  
+ </div>
 
 ---
 

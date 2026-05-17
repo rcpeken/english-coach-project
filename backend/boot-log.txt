@@ -1,0 +1,242 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.recep:encoach >--------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.11:run (default-cli) > test-compile @ encoach >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ encoach ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ encoach ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ encoach ---
+[INFO] skip non existing resourceDirectory C:\Users\Recep\Desktop\encoach\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ encoach ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.11:run (default-cli) < test-compile @ encoach <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.11:run (default-cli) @ encoach ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.11)
+
+2026-03-17T03:56:42.030+03:00  INFO 12556 --- [  restartedMain] com.recep.encoach.Application            : Starting Application using Java 21 with PID 12556 (C:\Users\Recep\Desktop\encoach\target\classes started by Recep in C:\Users\Recep\Desktop\encoach)
+2026-03-17T03:56:42.031+03:00  INFO 12556 --- [  restartedMain] com.recep.encoach.Application            : No active profile set, falling back to 1 default profile: "default"
+2026-03-17T03:56:42.062+03:00  INFO 12556 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-17T03:56:42.062+03:00  INFO 12556 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-17T03:56:42.571+03:00  INFO 12556 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-17T03:56:42.626+03:00  INFO 12556 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 8 JPA repository interfaces.
+2026-03-17T03:56:43.059+03:00  INFO 12556 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-17T03:56:43.069+03:00  INFO 12556 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-17T03:56:43.069+03:00  INFO 12556 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-17T03:56:43.099+03:00  INFO 12556 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-17T03:56:43.099+03:00  INFO 12556 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1037 ms
+2026-03-17T03:56:43.188+03:00  INFO 12556 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-17T03:56:43.230+03:00  INFO 12556 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-03-17T03:56:43.253+03:00  INFO 12556 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-17T03:56:43.427+03:00  INFO 12556 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-17T03:56:43.451+03:00  INFO 12556 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-17T03:56:43.697+03:00  INFO 12556 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e7db3e0
+2026-03-17T03:56:43.699+03:00  INFO 12556 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-17T03:56:43.724+03:00  WARN 12556 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-17T03:56:43.736+03:00  INFO 12556 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-17T03:56:44.400+03:00  INFO 12556 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    create table questions (
+        id bigint generated by default as identity,
+        correct_option varchar(255) not null check (correct_option in ('A','B','C','D')),
+        optiona varchar(255) not null,
+        optionb varchar(255) not null,
+        optionc varchar(255) not null,
+        optiond varchar(255) not null,
+        question_text TEXT not null,
+        test_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table reading_assignments (
+        id bigint generated by default as identity,
+        assigned_at timestamp(6) not null,
+        passage_id bigint not null,
+        student_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table reading_passages (
+        id bigint generated by default as identity,
+        content TEXT not null,
+        created_at timestamp(6) not null,
+        title varchar(255) not null,
+        teacher_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table student_answers (
+        id bigint generated by default as identity,
+        correct boolean not null,
+        selected_option varchar(255) not null check (selected_option in ('A','B','C','D')),
+        question_id bigint not null,
+        result_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table test_assignments (
+        id bigint generated by default as identity,
+        assigned_at timestamp(6) not null,
+        status varchar(255) not null check (status in ('PENDING','COMPLETED')),
+        student_id bigint not null,
+        test_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table test_results (
+        id bigint generated by default as identity,
+        completed_at timestamp(6) not null,
+        score integer not null,
+        total_questions integer not null,
+        assignment_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table tests (
+        id bigint generated by default as identity,
+        created_at timestamp(6) not null,
+        description TEXT,
+        title varchar(255) not null,
+        teacher_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table users (
+        id bigint generated by default as identity,
+        created_at timestamp(6) not null,
+        email varchar(255) not null,
+        full_name varchar(255) not null,
+        password varchar(255) not null,
+        role varchar(255) not null check (role in ('TEACHER','STUDENT')),
+        primary key (id)
+    )
+Hibernate: 
+    create table vocabulary_words (
+        id bigint generated by default as identity,
+        created_at timestamp(6) not null,
+        example_sentence TEXT,
+        mastery_level integer not null,
+        meaning varchar(255) not null,
+        next_review_at timestamp(6),
+        review_count integer not null,
+        word varchar(255) not null,
+        passage_id bigint,
+        student_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists test_results 
+       drop constraint if exists UKa2rf6aiygjwpfgo0y353sfj5m
+2026-03-17T03:56:44.506+03:00  WARN 12556 --- [  restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-03-17T03:56:44.506+03:00  WARN 12556 --- [  restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : "test_results" nesnesinin "uka2rf6aiygjwpfgo0y353sfj5m" k─▒s─▒tlamas─▒ mevcut de─şil, atlan─▒yor
+Hibernate: 
+    alter table if exists test_results 
+       add constraint UKa2rf6aiygjwpfgo0y353sfj5m unique (assignment_id)
+Hibernate: 
+    alter table if exists users 
+       drop constraint if exists UK6dotkott2kjsp8vw4d0m25fb7
+2026-03-17T03:56:44.508+03:00  WARN 12556 --- [  restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-03-17T03:56:44.508+03:00  WARN 12556 --- [  restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : "users" nesnesinin "uk6dotkott2kjsp8vw4d0m25fb7" k─▒s─▒tlamas─▒ mevcut de─şil, atlan─▒yor
+Hibernate: 
+    alter table if exists users 
+       add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+Hibernate: 
+    alter table if exists questions 
+       add constraint FKoc6xkgj16nhyyes4ath9dyxxw 
+       foreign key (test_id) 
+       references tests
+Hibernate: 
+    alter table if exists reading_assignments 
+       add constraint FK1rane97y79882p1g0wbr4i1x5 
+       foreign key (passage_id) 
+       references reading_passages
+Hibernate: 
+    alter table if exists reading_assignments 
+       add constraint FKt1lwhglbvi1ho0oek42djj5f0 
+       foreign key (student_id) 
+       references users
+Hibernate: 
+    alter table if exists reading_passages 
+       add constraint FKil4lg0rsv1ilwhrh2dlrwirvp 
+       foreign key (teacher_id) 
+       references users
+Hibernate: 
+    alter table if exists student_answers 
+       add constraint FK8nyksamccim8emu803uhf2da 
+       foreign key (question_id) 
+       references questions
+Hibernate: 
+    alter table if exists student_answers 
+       add constraint FKb4291rntv00bqd8ep5m5rox5f 
+       foreign key (result_id) 
+       references test_results
+Hibernate: 
+    alter table if exists test_assignments 
+       add constraint FK5hua4vgtn2hgi1d91dojvyojx 
+       foreign key (student_id) 
+       references users
+Hibernate: 
+    alter table if exists test_assignments 
+       add constraint FKqbsm2g32sjdsmfqrbwshtvn 
+       foreign key (test_id) 
+       references tests
+Hibernate: 
+    alter table if exists test_results 
+       add constraint FKdew0eln1hof7ynds75vk4m4el 
+       foreign key (assignment_id) 
+       references test_assignments
+Hibernate: 
+    alter table if exists tests 
+       add constraint FK7qf7717w0lnlceg36gg4il8fg 
+       foreign key (teacher_id) 
+       references users
+Hibernate: 
+    alter table if exists vocabulary_words 
+       add constraint FKdn7g4hv9s1ahym11m5ngr6ng0 
+       foreign key (passage_id) 
+       references reading_passages
+Hibernate: 
+    alter table if exists vocabulary_words 
+       add constraint FKpc3uv38axdy08utkngygciqc6 
+       foreign key (student_id) 
+       references users
+2026-03-17T03:56:44.524+03:00  INFO 12556 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-17T03:56:44.928+03:00  WARN 12556 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-17T03:56:45.078+03:00  WARN 12556 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: eb30befc-a331-45ca-afd8-ec0572e6b161
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-17T03:56:45.082+03:00  INFO 12556 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-17T03:56:45.321+03:00  INFO 12556 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-17T03:56:45.341+03:00  INFO 12556 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-17T03:56:45.347+03:00  INFO 12556 --- [  restartedMain] com.recep.encoach.Application            : Started Application in 3.604 seconds (process running for 3.878)

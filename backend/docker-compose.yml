@@ -1,0 +1,15 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    container_name: encoach-db
+    environment:
+      POSTGRES_DB: encoachdb
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5433:5432"
+    volumes:
+      - encoach-pgdata:/var/lib/postgresql/data
+
+volumes:
+  encoach-pgdata:

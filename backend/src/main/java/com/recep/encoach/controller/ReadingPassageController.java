@@ -3,6 +3,7 @@ package com.recep.encoach.controller;
 import com.recep.encoach.dto.ReadingPassageRequest;
 import com.recep.encoach.dto.ReadingPassageResponse;
 import com.recep.encoach.entity.User;
+import com.recep.encoach.service.PassageIndexingService;
 import com.recep.encoach.service.ReadingPassageService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +21,7 @@ import java.util.Map;
 public class ReadingPassageController {
 
     private final ReadingPassageService readingPassageService;
+    private final PassageIndexingService passageIndexingService;
 
     @PostMapping
     @PreAuthorize("hasRole('TEACHER')")
@@ -34,6 +36,13 @@ public class ReadingPassageController {
     public ResponseEntity<List<ReadingPassageResponse>> getMyPassages(
             @AuthenticationPrincipal User teacher) {
         return ResponseEntity.ok(readingPassageService.getPassagesByTeacher(teacher.getId()));
+    }
+
+    @PostMapping("/reindex")
+    @PreAuthorize("hasRole('TEACHER')")
+    public ResponseEntity<Map<String, Integer>> reindexMyPassages(
+            @AuthenticationPrincipal User teacher) {
+        return ResponseEntity.ok(passageIndexingService.reindexTeacherPassages(teacher.getId()));
     }
 
     @GetMapping("/{passageId}")

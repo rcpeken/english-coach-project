@@ -5,10 +5,12 @@ import com.recep.encoach.dto.ReadingPassageResponse;
 import com.recep.encoach.entity.ReadingAssignment;
 import com.recep.encoach.entity.ReadingPassage;
 import com.recep.encoach.entity.User;
+import com.recep.encoach.event.PassageCreatedEvent;
 import com.recep.encoach.repository.ReadingAssignmentRepository;
 import com.recep.encoach.repository.ReadingPassageRepository;
 import com.recep.encoach.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,6 +24,7 @@ public class ReadingPassageService {
     private final ReadingPassageRepository readingPassageRepository;
     private final ReadingAssignmentRepository readingAssignmentRepository;
     private final UserRepository userRepository;
+    private final ApplicationEventPublisher eventPublisher;
 
     @Transactional
     public ReadingPassageResponse createPassage(ReadingPassageRequest request, User teacher) {
@@ -32,6 +35,7 @@ public class ReadingPassageService {
                 .build();
 
         passage = readingPassageRepository.save(passage);
+        eventPublisher.publishEvent(new PassageCreatedEvent(passage.getId(), passage.getTitle(), passage.getContent()));
         return mapToResponse(passage);
     }
 

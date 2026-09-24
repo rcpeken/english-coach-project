@@ -16,7 +16,7 @@ EnCoach, klasik bir öğrenme yönetim sisteminin (LMS) ötesine geçerek öğre
 *   **İnteraktif Okuma:** Atanan okuma parçalarını okurken bilmediği kelimelerin üzerine dokunarak anında çevirisine ve örnek cümlelerine (DeepL & Dictionary API) ulaşma.
 *   **Kelime Kütüphanesi (Vocabulary):** Öğrendiği kelimeleri kaydederek kendi sözlüğünü oluşturma ve sonradan kelime tekrarı yapabilme.
 *   **Test Çözme:** Atanan testleri çözme ve anında sonuçları görme.
-*   **AI Chat (Yapay Zeka Öğretmen):** Gemini altyapısı ile çalışan sanal öğretmene İngilizce gramer soruları sorma, sohbet ederek pratik yapma.
+*   **AI Chat (Yapay Zeka Öğretmen):** Gemini altyapısı ile çalışan sanal öğretmene İngilizce gramer soruları sorma, sohbet ederek pratik yapma. Öğretmen, öğrenciye atanmış okuma metinlerinde arama yapıp (RAG) cevabını bu metinlere dayandırır ve kaynağını gösterir. Ayrıntılar ve değerlendirme sonuçları: [docs/RAG.md](docs/RAG.md).
 *   **AI Metin Analizi:** Okuma parçalarında anlamadığı cümleleri seçip yapay zekadan gramer ve yapı analizi isteme.
 *   **AI Yanlış Cevap Açıklayıcı:** Testlerde yanlış yaptığı soruların "Neden yanlış?" ve "Doğrusu ne olmalı?" mantığını yapay zekaya sorarak öğrenme.
 *   **AI Quiz (Sınav) Üretici:** İstediği herhangi bir konuda yapay zekaya otomatik quiz hazırlatıp pratik yapma.
@@ -42,7 +42,7 @@ Aşağıdaki kısma projenizin ekran görüntülerini ekleyebilirsiniz. Fotoğra
 ### Backend (Sunucu)
 *   **Dil:** Java 21
 *   **Framework:** Spring Boot 3.x
-*   **Veritabanı:** PostgreSQL
+*   **Veritabanı:** PostgreSQL + pgvector (vektör araması)
 *   **Güvenlik:** Spring Security & JWT (JSON Web Token)
 *   **ORM:** Hibernate / Spring Data JPA
 *   **Harici API'ler:** Google Gemini SDK, DeepL API, Free Dictionary API
@@ -68,10 +68,12 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 *   Expo CLI (`npm install -g expo-cli`)
 
 ### 1. Veritabanı Hazırlığı
-PostgreSQL üzerinde `encoachdb` adında boş bir veritabanı oluşturun.
-```sql
-CREATE DATABASE encoachdb;
+RAG özelliği pgvector eklentisine ihtiyaç duyar. En kolay yol, hazır Docker imajıyla çalıştırmaktır (`.env` dosyası hazırlandıktan sonra):
+```bash
+cd backend
+docker compose up -d   # pgvector'lu PostgreSQL 17, port 5433, encoachdb veritabanı
 ```
+Bu durumda `.env` içindeki `DB_URL` değerini `jdbc:postgresql://localhost:5433/encoachdb` yapın. `application.properties` içine gereken ayarlar için [docs/RAG.md](docs/RAG.md#çalıştırma) bölümüne bakın.
 
 ### 2. Çevre Değişkenleri (.env) Ayarları
 Projenin root dizininde güvenlik amacıyla API anahtarları `.env` dosyalarından okunmaktadır.
@@ -79,7 +81,7 @@ Projenin root dizininde güvenlik amacıyla API anahtarları `.env` dosyalarınd
 **Backend için:**
 `backend/` dizinine gidin ve `.env.example` dosyasının bir kopyasını oluşturup adını `.env` yapın. İçini kendi bilgilerinizle doldurun:
 ```env
-DB_URL=jdbc:postgresql://localhost:5432/encoachdb
+DB_URL=jdbc:postgresql://localhost:5433/encoachdb
 DB_USERNAME=postgres
 DB_PASSWORD=sizin_veritabani_sifreniz
 JWT_SECRET=super_gizli_rastgele_jwt_anahtariniz_256_bit_olmali

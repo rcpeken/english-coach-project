@@ -1,0 +1,55 @@
+[
+  {"question": "Emre'nin ailesi hangi şehre taşındı?", "lang": "tr", "passageId": 1, "answer": "moved from Ankara to Izmir"},
+  {"question": "What are Emre's hobbies?", "lang": "en", "passageId": 1, "answer": "basketball and drawing comics"},
+  {"question": "Deniz Emre'yi öğle yemeğinde nereye davet etti?", "lang": "tr", "passageId": 1, "answer": "sit with his friends in the school garden"},
+  {"question": "Why did Emre feel nervous on his first day?", "lang": "en", "passageId": 1, "answer": "he did not know anyone"},
+
+  {"question": "What time does the market open?", "lang": "en", "passageId": 2, "answer": "The market opens at seven o'clock"},
+  {"question": "Büyükanne domates alırken ne yapılması gerektiğini söylüyor?", "lang": "tr", "passageId": 2, "answer": "never buy tomatoes without smelling them first"},
+  {"question": "Ayşe'nin en sevdiği tezgahta ne satılıyor?", "lang": "tr", "passageId": 2, "answer": "sells honey from his own bees in the mountains"},
+  {"question": "Is the market cheaper than the supermarket?", "lang": "en", "passageId": 2, "answer": "cheaper than shopping at the supermarket"},
+
+  {"question": "Selin'in ilk makarnası neden tatsız oldu?", "lang": "tr", "passageId": 3, "answer": "forgot to add salt to the water"},
+  {"question": "What advice did Selin's father give her?", "lang": "en", "passageId": 3, "answer": "start with three easy recipes"},
+  {"question": "Which dishes can Selin make now?", "lang": "en", "passageId": 3, "answer": "lentil soup, a vegetable omelette and a chicken salad"},
+  {"question": "Selin ev arkadaşlarıyla ne zaman yemek yapıyor?", "lang": "tr", "passageId": 3, "answer": "cooks with her flatmates on Sunday evenings"},
+
+  {"question": "Maria neden İspanyolca konuşmaktan çekiniyordu?", "lang": "tr", "passageId": 4, "answer": "she was afraid of making mistakes"},
+  {"question": "Maria akşamları nerede çalışıyor?", "lang": "tr", "passageId": 4, "answer": "works part-time in a small cafe"},
+  {"question": "What does reluctant mean in the text?", "lang": "en", "passageId": 4, "answer": "she was reluctant to speak Spanish"},
+  {"question": "Maria gelecek yaz nereye gidecek?", "lang": "tr", "passageId": 4, "answer": "travel to Girona"},
+  {"question": "What surprised Maria about the signs in the city?", "lang": "en", "passageId": 4, "answer": "Many signs in the city are written in Catalan"},
+
+  {"question": "Kahve ilk olarak nerede keşfedildi?", "lang": "tr", "passageId": 5, "answer": "coffee was discovered in Ethiopia"},
+  {"question": "Who was Kaldi?", "lang": "en", "passageId": 5, "answer": "a goat herder called Kaldi"},
+  {"question": "Yemen'de insanlar kahveyi neden içiyordu?", "lang": "tr", "passageId": 5, "answer": "to stay awake during long night prayers"},
+  {"question": "Which country produces the most coffee?", "lang": "en", "passageId": 5, "answer": "Brazil produces more coffee than any other country"},
+
+  {"question": "Why does blue light make it harder to sleep?", "lang": "en", "passageId": 6, "answer": "tells the brain that it is still daytime"},
+  {"question": "Telefonunu yatakta kullanan öğrenciler ne kadar az uyuyor?", "lang": "tr", "passageId": 6, "answer": "slept about one hour less"},
+  {"question": "Doktorlar yatmadan ne kadar önce ekranı bırakmayı öneriyor?", "lang": "tr", "passageId": 6, "answer": "at least thirty minutes before bed"},
+  {"question": "What can you use instead of your phone as an alarm?", "lang": "en", "passageId": 6, "answer": "buy a cheap traditional alarm clock instead"},
+
+  {"question": "Kerem ve kız kardeşi Kapadokya'ya nasıl gittiler?", "lang": "tr", "passageId": 7, "answer": "took a night bus from Istanbul"},
+  {"question": "Where did Kerem and his sister stay?", "lang": "en", "passageId": 7, "answer": "a small hotel that was built inside a cave"},
+  {"question": "Peri bacaları nedir?", "lang": "tr", "passageId": 7, "answer": "strange rock formations called fairy chimneys"},
+  {"question": "What souvenir did they buy in Cappadocia?", "lang": "en", "passageId": 7, "answer": "a hand-painted plate from a local pottery workshop"},
+
+  {"question": "How do baby turtles find the sea?", "lang": "en", "passageId": 8, "answer": "following the light of the moon on the waves"},
+  {"question": "Yavru kaplumbağalar için hangi tehlikeler var?", "lang": "tr", "passageId": 8, "answer": "bright lights from hotels and restaurants"},
+  {"question": "Gönüllüler yumurtaları nasıl koruyor?", "lang": "tr", "passageId": 8, "answer": "small metal cages over the eggs"},
+  {"question": "When do the baby turtles come out of their eggs?", "lang": "en", "passageId": 8, "answer": "break out of their eggs at night"},
+
+  {"question": "Present perfect ile past simple arasındaki fark nedir?", "lang": "tr", "passageId": null, "answer": null},
+  {"question": "Phrasal verb nedir, örnek verir misin?", "lang": "tr", "passageId": null, "answer": null},
+  {"question": "How do I use 'since' and 'for'?", "lang": "en", "passageId": null, "answer": null},
+  {"question": "İngilizcede saat nasıl söylenir?", "lang": "tr", "passageId": null, "answer": null},
+  {"question": "Can you give me some tips for the IELTS speaking exam?", "lang": "en", "passageId": null, "answer": null},
+  {"question": "'Make' ile 'do' arasındaki fark ne?", "lang": "tr", "passageId": null, "answer": null},
+  {"question": "What is the plural of 'mouse'?", "lang": "en", "passageId": null, "answer": null},
+  {"question": "Bana İngilizce bir tekerleme öğret", "lang": "tr", "passageId": null, "answer": null},
+  {"question": "How do I write a formal email?", "lang": "en", "passageId": null, "answer": null},
+  {"question": "Futbolla ilgili İngilizce kelimeler öğrenmek istiyorum", "lang": "tr", "passageId": null, "answer": null},
+  {"question": "Bugün kendimi motivasyonsuz hissediyorum, ne yapmalıyım?", "lang": "tr", "passageId": null, "answer": null},
+  {"question": "What is the difference between 'will' and 'going to'?", "lang": "en", "passageId": null, "answer": null}
+]

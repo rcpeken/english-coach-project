@@ -23,7 +23,7 @@ public class RetrievalService {
     public RetrievalService(EmbeddingService embeddingService,
                             PassageChunkRepository passageChunkRepository,
                             @Value("${rag.top-k:4}") int topK,
-                            @Value("${rag.min-similarity:0.6}") double minSimilarity) {
+                            @Value("${rag.min-similarity:0.62}") double minSimilarity) {
         this.embeddingService = embeddingService;
         this.passageChunkRepository = passageChunkRepository;
         this.topK = topK;
@@ -31,6 +31,11 @@ public class RetrievalService {
     }
 
     /**
+     * Eşik 0.62: RagRetrievalEvalTest'te (45 soru) hiçbir metin sorusunu kaybetmeden ilgisiz soruların
+     * %75'ini eler. 0.63 dengeli doğrulukta daha yüksek ama bunu 0.001'lik farkla ve bir metin sorusunu
+     * kaybederek yapıyor; kaynaksız kalan metin sorusu, gereksiz kaynak alan genel sorudan daha zararlı.
+     * Ayrıntı: docs/RAG.md.
+     *
      * Eşiğin altındaki parçalar atılır: soru metinlerle ilgisizse (ör. genel bir gramer sorusu)
      * boş liste döner ve chat genel bilgiyle cevap verir. Retrieval hata verirse de chat
      * kaynaksız devam eder; arama katmanının arızası öğrencinin sohbetini kesmemeli.

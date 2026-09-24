@@ -48,6 +48,7 @@ public record RagContext(String promptBlock, List<AiChatResponse.Source> sources
                 - Soru bu bölümlerle ilgiliyse cevabını onlara dayandır ve kullandığın kaynağı [1] gibi numarasıyla belirt.
                 - Bölümlerde yazmayan bir şeyi metinde yazıyormuş gibi söyleme.
                 - Soru bu bölümlerle ilgili değilse kaynakları görmezden gel ve genel bilginle cevap ver.
+                - Bir kaynaktan bilgi kullanmadıysan o kaynağın numarasını yazma; "metinde yok" derken de numara verme.
                 """);
 
         return new RagContext(block.toString(), List.copyOf(sources));

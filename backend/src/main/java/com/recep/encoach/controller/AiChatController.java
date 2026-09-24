@@ -1,10 +1,13 @@
 package com.recep.encoach.controller;
 
 import com.recep.encoach.dto.*;
+import com.recep.encoach.entity.User;
 import com.recep.encoach.service.GeminiService;
+import com.recep.encoach.service.RagChatService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -13,12 +16,13 @@ import org.springframework.web.bind.annotation.*;
 public class AiChatController {
 
     private final GeminiService geminiService;
+    private final RagChatService ragChatService;
 
     @PostMapping("/chat")
     @PreAuthorize("hasRole('STUDENT')")
-    public ResponseEntity<AiResponse> chat(@RequestBody AiChatRequest request) {
-        String reply = geminiService.chat(request.getMessages(), request.getMessage());
-        return ResponseEntity.ok(new AiResponse(reply));
+    public ResponseEntity<AiChatResponse> chat(@RequestBody AiChatRequest request,
+                                               @AuthenticationPrincipal User student) {
+        return ResponseEntity.ok(ragChatService.chat(student.getId(), request.getMessages(), request.getMessage()));
     }
 
     @PostMapping("/explain-word")

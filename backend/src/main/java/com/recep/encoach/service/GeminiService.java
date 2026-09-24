@@ -38,9 +38,13 @@ public class GeminiService {
         this.model = model;
     }
 
-    public String chat(List<AiChatRequest.ChatMessage> history, String userMessage) {
+    public String chat(List<AiChatRequest.ChatMessage> history, String userMessage, String sourcesBlock) {
         StringBuilder prompt = new StringBuilder();
         prompt.append(SYSTEM_PROMPT).append("\n\n");
+
+        if (sourcesBlock != null && !sourcesBlock.isBlank()) {
+            prompt.append(sourcesBlock).append("\n");
+        }
 
         if (history != null && !history.isEmpty()) {
             prompt.append("Önceki konuşma:\n");
